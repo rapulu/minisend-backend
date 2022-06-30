@@ -22,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/send', [EmailController::class, 'send']);
 Route::get('/search', [EmailController::class, 'search']);
 Route::get('/email/{email}', [EmailController::class, 'find']);
+Route::get('/stats', [EmailController::class, 'getstats']);

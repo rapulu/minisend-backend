@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class EmailLog extends Model
 {
     use HasFactory;
+
+    
 }

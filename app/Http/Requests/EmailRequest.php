@@ -42,8 +42,8 @@ class EmailRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'sender' => 'required',
-            'recipient' => 'required',
+            'sender' => 'required|string|email',
+            'recipient' => 'required|string|email',
             'subject' => 'required',
             'body' => 'required',
             'file' => 'required'
